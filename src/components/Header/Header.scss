@@ -1,0 +1,23 @@
+.header {
+  &-back {
+    background: url('./../../img/back.svg');
+    background-size: 71px;
+    width: 71px;
+    height: 71px;
+    display: inline-block;
+    position: relative;
+    transition: left .2s;
+    left: -11px;
+
+    &:hover {
+      left: -17px;
+    }
+  }
+}
+
+.title-page {
+  width: calc(100% - 72px);
+  font-size: 28pt;
+  line-height: 32pt;
+  padding-left: 19px;
+}

@@ -1,0 +1,39 @@
+.create-item {
+  padding: 45px 0;
+  display: flex;
+  justify-content: center;
+
+  &-button {
+    background-color: #D4145A;
+    border: 0;
+    outline: none;
+    border-radius: 100%;
+    font-size: 72pt;
+    width: 112px;
+    height: 112px;
+    position: relative;
+    box-shadow: 2px 2px 10px 4px rgba(0,0,0,.3);
+    transition: box-shadow .2s;
+    cursor: pointer;
+
+    &:hover {
+      box-shadow: 0px 0px 0px 0px rgba(0,0,0,.1);
+    }
+  }
+
+  &-text{
+    font-size: 69pt;
+    line-height: 72pt;
+    color: #F5A8F0;
+    position: absolute;
+    top: -2px;
+    left: 27px;
+    font-weight: 600;
+  }
+}
+
+.topics-container {
+  max-height: calc(100vh - 451px);
+  min-height: 400px;
+  overflow-y: auto;
+}
