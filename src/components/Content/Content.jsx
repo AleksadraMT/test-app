@@ -11,16 +11,16 @@ import TopicDetails from './TopicsList/TopicDetails/TopicDetails';
 export default class Content extends Component {
   routes = [
     {
-      path: '/',
+      path: '/test-app/',
       content: () => <TopicsList />,
       exact: true,
     },
     {
-      path: '/create',
+      path: '/test-app/create',
       content: () => <CreateNewItem />,
     },
     {
-      path: '/topic-:id',
+      path: '/test-app/topic-:id',
       content: () => <TopicDetails />,
     }
   ]
