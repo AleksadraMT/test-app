@@ -49,7 +49,7 @@ class CreateNewItem extends Component {
 
     addTopic(text);
 
-    history.push('/')
+    history.push('/test-app/')
 
     this.setState({
       'text': ''
@@ -57,8 +57,8 @@ class CreateNewItem extends Component {
   }
 
   handleChange = (event) => {
-    this.setState({ 
-      'text' : event.target.value 
+    this.setState({
+      'text' : event.target.value
     });
   }
 
@@ -68,17 +68,17 @@ class CreateNewItem extends Component {
 
   render() {
     return (
-      <form 
-        className={classNames('new-item-form')} 
+      <form
+        className={classNames('new-item-form')}
         onSubmit={(e) => this.handleSubmit(e)}
       >
-        <input 
-          className={classNames('new-item-input')} 
-          type="text" 
-          id="title" 
-          placeholder="Type new item name" 
-          onChange={(e) => this.handleChange(e)} 
-          required 
+        <input
+          className={classNames('new-item-input')}
+          type="text"
+          id="title"
+          placeholder="Type new item name"
+          onChange={(e) => this.handleChange(e)}
+          required
         />
         <button className={classNames('new-item-button')}></button>
       </form>
