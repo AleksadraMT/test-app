@@ -1,5 +1,8 @@
 import React, { Component } from 'react';
 
+import { withRouter } from 'react-router-dom'
+import { connect } from 'react-redux';
+
 import './Sayer.scss';
 
 // components
@@ -17,3 +20,5 @@ export default class Sayer extends Component {
     );
   }
 }
+
+withRouter(connect(null,null)(Sayer));
