@@ -1,5 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import { withRouter } from 'react-router-dom'
+import { connect } from 'react-redux';
 import { createStore } from 'redux';
 import { Provider } from 'react-redux';
 
@@ -12,8 +14,10 @@ const store = createStore(reducer);
 ReactDOM.render(
   <Provider store={store}>
     <Sayer />
-  </Provider>, 
+  </Provider>,
   document.getElementById('root')
 );
+
+withRouter(connect(null, null)(Sayer));
 
 serviceWorker.register();
