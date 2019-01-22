@@ -8,8 +8,8 @@ import { connect } from 'react-redux';
 import './Header.scss';
 
 const mapStateToProps = state => {
-  return { 
-    header: state.header 
+  return {
+    header: state.header
   };
 };
 
@@ -30,20 +30,20 @@ class Header extends Component {
       <div className={ classNames('sayer-header') }>
         { header.back ? (
           <div>
-            <a 
-              className={ classNames('header-back') } 
-              href="/"
+            <a
+              className={ classNames('header-back') }
+              href="/test-app/"
             ></a>
           </div>
           ) : null }
         { header.title ? (
           <h1>
             { header.title }
-          </h1> 
+          </h1>
           ) : '' }
         <h4 className={ classNames({'title-page': header.page}) }>
           { header.subtitle }
-        </h4> 
+        </h4>
       </div>
     )
   }

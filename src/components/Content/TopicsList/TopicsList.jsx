@@ -10,7 +10,7 @@ import { changeHeader } from "./../../../actions";
 import './TopicsList.scss';
 
 const mapStateToProps = state => {
-  return { 
+  return {
     list: state.sayer
   };
 };
@@ -45,19 +45,19 @@ class TopicsList extends Component {
           { list !== null && list.length ? (
             <ul className={classNames('topics')}>
               {list.map((el, index) => (
-                <TopicItem 
+                <TopicItem
                   key={index}
                   el={el}
                 />
               ))}
-            </ul> 
+            </ul>
             ) : <div className={classNames('empty-block')}>No items</div>
           }
         </div>
         <div className={classNames('create-item')}>
-          <button 
-            className={classNames('create-item-button')} 
-            onClick={() => history.push('/create')}
+          <button
+            className={classNames('create-item-button')}
+            onClick={() => history.push('/test-app/create')}
           >
             <span className={classNames('create-item-text')}>+</span>
           </button>

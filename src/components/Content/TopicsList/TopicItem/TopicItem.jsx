@@ -44,14 +44,14 @@ class TopicsItem extends Component {
   render() {
     const {index, el, } = this.props;
     const {id, text, comments, } = el;
-    
+
     return (
-      <li 
-        key={index} 
+      <li
+        key={index}
         className={classNames('topics-item')}
       >
         <Link to={{
-          pathname: `/topic-${id}`,
+          pathname: `/test-app/topic-${id}`,
           state: {
             title: text,
             },
@@ -60,7 +60,7 @@ class TopicsItem extends Component {
           <span className={classNames('topics-title')}>{text}</span>
         </Link>
         <span className={classNames('topics-counter')}>{comments.length}</span>
-        <span 
+        <span
           className={classNames('topics-remove')}
           onClick={() => this.removePost(id)}
         >
