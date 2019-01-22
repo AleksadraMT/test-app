@@ -1,6 +1,6 @@
 Test task was done by <br>
-Matviienko Oleksandra<br>
-http://sandraf.space<br>
+Matviienko Oleksandra <br>
+http://sandraf.space <br>
 lawrhill.ml@gmail.com
 
 ## Available Scripts
