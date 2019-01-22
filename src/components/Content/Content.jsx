@@ -2,6 +2,9 @@ import React, { Component } from 'react';
 import { BrowserRouter as Router, Route, } from "react-router-dom";
 import classNames from 'classnames/bind';
 
+import { withRouter } from 'react-router-dom'
+import { connect } from 'react-redux';
+
 import TopicsList from './TopicsList/TopicsList';
 import CreateNewItem from './TopicsList/CreateNewItem/CreateNewItem';
 import TopicDetails from './TopicsList/TopicDetails/TopicDetails';
@@ -40,3 +43,5 @@ export default class Content extends Component {
     )
   }
 }
+
+withRouter(connect(null,null)(Content));
